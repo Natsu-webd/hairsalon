@@ -80,6 +80,7 @@ header {
         padding: 16px;
         text-align: center;
         transition: 0.3s;
+        color: #000;
 
         &:hover {
           background: variables.$color-accent;
