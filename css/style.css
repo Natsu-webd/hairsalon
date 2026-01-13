@@ -118,6 +118,7 @@ header .hamburger span {
     padding: 16px;
     text-align: center;
     transition: 0.3s;
+    color: #000;
   }
   header .nav__list a:hover {
     background: #a67c52;
