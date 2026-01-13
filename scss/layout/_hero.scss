@@ -1,0 +1,73 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixin" as mixins;
+
+.hero {
+  height: 80vh;
+  background: url("../images/hero.jpg") center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; // ← 右寄せの本体
+
+  padding-right: 8%; // ← 余白は padding で調整
+
+  .hero-text {
+    color: #fff;
+    max-width: 520px;
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: $color-accent;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border-radius: 4px;
+    }
+  }
+
+  /* =====================
+     Tablet
+  ===================== */
+  @include mixins.tb {
+    .hero-text {
+      padding-left: 45%; // ← 余白を減らす
+      max-width: 90%;
+
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  /* =====================
+     SmartPhone
+  ===================== */
+  @include mixins.sp {
+    height: 60vh;
+    justify-content: center;
+    text-align: center;
+
+    .hero-text {
+      padding-left: 0; // ← 超重要
+      max-width: 90%;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+}

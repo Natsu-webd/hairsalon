@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hair Salon Empty</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="header-inner">
+        <div class="logo">HAIR SALON EMPTY</div>
+
+        <!-- ハンバーガーメニュー -->
+        <button class="hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- ナビバー -->
+        <nav class="nav" id="js-nav">
+          <ul class="nav__list">
+            <li><a href="#menu">メニュー</a></li>
+            <li><a href="#gallery">スタイル</a></li>
+            <li><a href="#staff">スタッフ</a></li>
+            <li><a href="#access">アクセス</a></li>
+            <li><a href="reservation.html">予約</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- メイン -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>あなたに似合うをつくる美容室</h1>
+        <p>当ヘアサロンは男性も気軽に来れるサロンです。</p>
+        <a href="reservation.html" class="btn">予約する</a>
+      </div>
+    </section>
+
+    <section id="menu" class="menu container">
+      <h2 class="section-title">メニュー＆料金(税込)</h2>
+      <table>
+        <tr>
+          <th>カットのみ(大人)</th>
+          <td>¥3,000</td>
+          <th>カットのみ(中学生以下)</th>
+          <td>¥2,000</td>
+        </tr>
+        <tr>
+          <th>カラー</th>
+          <td>¥5,000</td>
+          <th>カラー(2色以上)</th>
+          <td>¥8,000~</td>
+        </tr>
+        <tr>
+          <th>パーマ</th>
+          <td>¥7,000</td>
+          <th>シャンプー</th>
+          <td>¥2,000</td>
+        </tr>
+        <tr>
+          <th>トリートメント</th>
+          <td>¥2,000</td>
+          <th>指名料</th>
+          <td>+¥500</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="gallery" class="gallery container">
+      <h2 class="section-title">スタイル集</h2>
+      <div class="grid">
+        <img src="images/hairstyle.jpeg" />
+        <img src="images/hairstyle2.jpeg" />
+        <img src="images/hairstyle3.jpg" />
+      </div>
+    </section>
+
+    <section id="voice" class="voice container">
+      <h2 class="section-title">お客様のお声</h2>
+      <div class="voice-item">
+        担当してくださったスタッフさんがとて丁寧で安心して任せられました！(29歳男性)
+      </div>
+      <div class="voice-item">
+        男性でも入りやすい雰囲気で気に入りました!(30代男性)
+      </div>
+    </section>
+
+    <section id="staff" class="staff container">
+      <h2 class="section-title">スタッフ紹介</h2>
+      <div class="staff-list">
+        <div class="staff-card">
+          <img src="images/stylist.jpeg" width="120" />
+          <h3>スタイリスト　Aya</h3>
+          <p>ナチュラルスタイルが得意です！</p>
+        </div>
+        <div class="staff-card">
+          <img src="images/stylist3.jpeg" width="120" />
+          <h3>スタイリスト　Hide</h3>
+          <p>気軽にお声掛けください！</p>
+        </div>
+        <div class="staff-card">
+          <img src="images/stylist2.jpg" width="120" />
+          <h3>スタイリスト　Nina</h3>
+          <p>どんなスタイルでもお任せください！</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>© 2026 HAIR SALON EMPTY</footer>
+
+    <!-- script -->
+    <script src="js/hamburger.js"></script>
+  </body>
+</html>
