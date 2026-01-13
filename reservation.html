@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お問い合わせフォーム</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="header-inner">
+        <div class="logo">HAIR SALON EMPTY</div>
+
+        <!-- ハンバーガーメニュー -->
+        <button class="hamburger" id="js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- ナビバー -->
+        <nav class="nav" id="js-nav">
+          <ul class="nav__list">
+            <li><a href="/index.html">前画面へ戻る</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <hr />
+
+    <!-- フォーム -->
+    <main class="reservation">
+      <form action="https://formspree.io/f/mykkyyqe" method="POST">
+        <input type="hidden" name="_redirect" value="thank.html" />
+
+        <!-- honeypot -->
+        <input type="text" name="_gotcha" style="display: none" />
+
+        <!-- 予約日 -->
+        <label for="date"> 予約日<span class="required">(必須)</span> </label>
+        <input type="date" id="date" name="date" required />
+
+        <!-- 予約時間 -->
+        <label for="time"> 予約時間<span class="required">(必須)</span> </label>
+        <input type="time" id="time" name="time" required />
+
+        <!-- メニュー -->
+        <label for="menu">
+          ご希望メニュー<span class="required">(必須)</span>
+        </label>
+        <select id="menu" name="menu" required>
+          <option value="">選択してください</option>
+          <option>カット</option>
+          <option>カット＋カラー</option>
+          <option>パーマ</option>
+          <option>トリートメント</option>
+        </select>
+
+        <!-- 名前 -->
+        <label for="name"> お名前<span class="required">(必須)</span> </label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- メール -->
+        <label for="email">
+          メールアドレス<span class="required">(必須)</span>
+        </label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- 備考 -->
+        <label for="message">備考</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+
+        <p class="notice">
+          ※ご希望日時は仮予約となります。<br />
+          確定のご連絡をもって予約成立となります。
+        </p>
+
+        <button type="submit">予約する</button>
+      </form>
+    </main>
+    <!-- フッター -->
+    <footer>© 2026 HAIR SALON EMPTY</footer>
+
+    <!-- 連投防止JS -->
+    <script src="js/reservation.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
